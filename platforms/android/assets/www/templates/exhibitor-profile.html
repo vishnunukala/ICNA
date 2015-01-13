@@ -1,0 +1,99 @@
+
+    <div class="schedule-menu text-center">
+            <div class="col-xs-2">
+                <a href="#/home">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+            <div class="col-xs-8">
+                <a href="#/exhibitors">
+                    Exhibitors
+                </a>
+            </div>
+         <div class="col-xs-2" ng-click="searchbar_exhibitors=!searchbar_exhibitors;search_exhibitors.term='';" ng-show="searchicon_exhibitors">
+                <a href="">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="search_result" ng-show="searchbar_exhibitors">
+                <form class="search" ng-submit="search_exhibitors(search_exhibitors.term)">
+                    <span class="glyphicon glyphicon-close" ng-click="searchicon_exhibitors = !searchicon_exhibitors;search_exhibitors.term='';"></span>
+					<input type="search" placeholder="Search in Exhibitors" id="exhibitors_search" ng-model="search_exhibitors.term" />
+   <!-- <span class="glyphicon glyphicon-search"></span>-->
+                 </form>
+				</div> 
+         </div>
+  <div class="scrollable-content">
+<div class="main-section">
+        <!--speakers top starts-->
+    
+        <!--speakers top starts-->
+        <div class="clearfix"></div>
+        <!--====Content starts====-->
+        <div class="menu-items" style="margin-bottom:50px;">
+            <div class="speakers-main">
+                <div class="blogShort">
+                    <a href="">
+                        <img src="images/ex1.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar Layout, Terms & Conditions & Sponsorships</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="loginModal">
+                <div class="speakers-profile">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#login" data-toggle="tab">Description</a>
+                        </li>
+                        <li>
+                            <a href="#create" data-toggle="tab">Contact Info</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content speakers-tab_content">
+                        <div class="tab-pane active in" id="login">
+
+                            <p>Click here to process
+                                <a href="">Bazaar Registration</a>
+                            </p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="tab-pane fade" id="create">
+                            <div class="sidebartest">
+                                <div class="list-group">
+                                    <div class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                web
+                                            </div>
+                                            <div class="col-xs-8 text-right">
+                                                <a href="#">http://www.icnaconvention.org/bazaar/</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                Mail:
+                                            </div>
+                                            <div class="col-xs-8 text-right">
+                                                <a href="">icnabazaar@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--====Content Ends====-->
+    </div>
+      </div>
+    </div>

@@ -1,0 +1,79 @@
+ <div class="schedule-menu text-center fixedheader">
+            <div class="col-xs-2">
+                <a href="#/home">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+            <div class="col-xs-8">
+                <a href="#/speakers">
+                    Speakers
+                </a>
+            </div>
+            <div class="col-xs-2" ng-click="searchbar=!searchbar;search.term='';" ng-show="searchicon">
+                <a href="">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+<div class="search_result" ng-show="searchbar">
+                <form class="search" ng-submit="searchResult(search.term)">
+        <span class="glyphicon glyphicon-close" ng-click="searchicon = !searchicon;search.term='';"></span>
+					<input type="search" placeholder="Search in Speakers" id="home_search" ng-model="search.term"/>
+   <!-- <span class="glyphicon glyphicon-search"></span>-->
+                 </form>
+				</div> 
+			 </div>
+<div class="scrollable">  
+  <div class="scrollable-content">
+   <div class="main-section">
+        <!--speakers top starts-->
+       
+        <!--speakers top starts-->
+        <div class="clearfix"></div>
+        <!--====Content starts====-->
+        <div class="menu-items">
+            <div class="speakers-main">
+                <div class="blogShort">
+                    <a href="">
+                        <img src="images/profile" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Arthur Richards</h4>
+                        <h5>Director for Hunger Prevention Program</h5>
+                        <p>
+                           ICNA
+                        </p>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="loginModal">
+                <div class="speakers-profile">
+                    <ul class="nav nav-tabs">
+                        <li class="profile active" >
+                            <a data-toggle="tab" href="#login">Profile</a>
+                        </li>
+                        <li class="sessions" >
+                            <a data-toggle="tab" href="#create">Sessions</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content speakers-tab_content">
+                        <div  class="tab-pane active in" id="login">
+                            <p>Arthur Naseer Richards is a Muslim Convert and has been a part of the Muslim community since July 18th 2010. He has a background in Christian youth ministry and was ordained a deacon within the Seventh Day Adventist Church.</p>
+                            <p>He serves on the board for LEAP (The Leaders Education Assistance Program), which provides scholarships to Muslim undergraduate and graduate students, and volunteers with Al Maghrib Institute.</p>
+                            <p>In his Career Field he currently serves as the Director for ICNA Relief’s Hunger Prevention Program. He is pursuing his Masters in Comparative Literature after doing both Pre-law and English Literature for his Undergraduate. He also works as an instructor in the Arabic Language for AQL (Advocating Quranic Literacy) alongside Imam Wisam Sharieff. He currently studies in the sciences of recitation and memorization of the Holy Quran, and Islamic Jurisprudence under a few select scholars.</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div  class="tab-pane fade" id="create"> <!-- -->
+                            <p>In his Career Field he currently serves as the Director for ICNA Relief’s Hunger Prevention Program. He is pursuing his Masters in Comparative Literature after doing both Pre-law and English Literature for his Undergraduate. He also works as an instructor in the Arabic Language for AQL (Advocating Quranic Literacy) alongside Imam Wisam Sharieff. He currently studies in the sciences of recitation and memorization of the Holy Quran, and Islamic Jurisprudence under a few select scholars.</p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--====Content Ends====-->
+    </div>
+      </div>
+     </div>

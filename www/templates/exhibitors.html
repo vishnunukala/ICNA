@@ -1,0 +1,108 @@
+
+   <div class="schedule-menu text-center">
+            <div class="col-xs-2">
+                <a href="#/home">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </div>
+            <div class="col-xs-8">
+                <a href="">
+                    Exhibitors
+                </a>
+            </div>
+            <div class="col-xs-2" ng-click="searchbar_exhibitors=!searchbar_exhibitors;search_exhibitors.term='';" ng-show="searchicon_exhibitors">
+                <a href="">
+                    <span class="glyphicon glyphicon-search"></span>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="search_result" ng-show="searchbar_exhibitors">
+                <form class="search" ng-submit="search_exhibitors(search_exhibitors.term)">
+                    <span class="glyphicon glyphicon-close" ng-click="searchicon_exhibitors = !searchicon_exhibitors;search_exhibitors.term='';"></span>
+					<input type="search" placeholder="Search in Exhibitors" id="exhibitors_search" ng-model="search_exhibitors.term"/>
+   <!-- <span class="glyphicon glyphicon-search"></span>-->
+                 </form>
+				</div> 
+        </div>
+
+  <div class="scrollable-content">
+     <div class="main-section">
+        <!--speakers top starts-->
+     
+        <!--speakers top starts-->
+        <div class="clearfix"></div>
+        <!--====Content starts====-->
+        <div class="menu-items" style="margin-bottom:50px;">
+            <div class="speakers-main">
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex1.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar Layout, Terms & Conditions & Sponsorships</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex2.PNG" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar - Civic, Dawah, Educational And Relief</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex3.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar - Books, Publications & Media</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex4.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar - Business and Financial</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex5.PNG" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar - Food and Healthcare</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex6.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar - Clothing, Handbags, And Jewelry</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="blogShort">
+                    <a href="#/exhibitor-profile">
+                        <img src="images/ex7.PNG" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                    </a>
+                    <article>
+                        <h4>Bazaar -Art, Paintings, Frames, Gifts & Toys</h4>
+                    </article>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <!--====Content Ends====-->
+    </div>
+    
+  </div>
