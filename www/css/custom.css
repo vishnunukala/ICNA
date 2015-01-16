@@ -106,8 +106,8 @@ background: #818181;color: #fff;border: none;}
     opacity: 0;
     width: 5%;
 }
-#home_search,#exhibitors_search,#sponsers_search{
-    width:100%;
+#home_search,#exhibitors_search,#sponsers_search,#about_search{
+    width:97.4%;
     float:left;
 }
 .slide-left.ng-enter,
@@ -207,7 +207,7 @@ background: #818181;color: #fff;border: none;}
     opacity: 1;
   }
 }
-.fliterBar {
+.storeMobileSideBar {
     width:220px!important;
     position:absolute;
     right:0;
@@ -217,25 +217,9 @@ background: #818181;color: #fff;border: none;}
     float: right;
 	overflow:hidden;
 }
-.storeSideBar_in {
-    -webkit-transform: translate3d(350px, 0, 0);
-    transform: translate3d(350px, 0, 0);
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
-}
-.storeSideBar {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
-}
 .storeMobileSideBar_in {
-    -webkit-transform: translate3d(280px, 0, 0);
-    transform: translate3d(280px, 0, 0);
+    -webkit-transform: translate3d(220px, 0, 0);
+    transform: translate3d(220px, 0, 0);
     -webkit-transition: -webkit-transform 400ms ease;
     -moz-transition: -moz-transform 400ms ease;
     -o-transition: -o-transform 400ms ease;
@@ -251,7 +235,6 @@ background: #818181;color: #fff;border: none;}
 }
 .filter_menu{
 width: 100%;
-padding: 32% 2% 0% 6%;
 position: absolute;
 height: 100%;
 overflow: auto;
@@ -296,24 +279,8 @@ color:#f9009a;
     color:#FFF;
 }
 .scheduleSideBar_in {
-    -webkit-transform: translate3d(350px, 0, 0);
-    transform: translate3d(350px, 0, 0);
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
-}
-.scheduleSideBar {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
-}
-.scheduleSideBar_in {
-    -webkit-transform: translate3d(280px, 0, 0);
-    transform: translate3d(280px, 0, 0);
+    -webkit-transform: translate3d(220px, 0, 0);
+    transform: translate3d(220px, 0, 0);
     -webkit-transition: -webkit-transform 400ms ease;
     -moz-transition: -moz-transform 400ms ease;
     -o-transition: -o-transform 400ms ease;
@@ -375,4 +342,15 @@ font: 12px "Roboto Medium",arial,sans-serif;
 }
 .filter_menu_list ul li a:hover{
 color:#f9009a;
+}
+md-sidenav{
+ width: 250px !important;   
+}
+md-toolbar{
+min-height: 44px !important;
+background-color: #75af0b !important;
+}
+.md-toolbar-tools{
+height: 44px !important;
+min-height: 44px !important;    
 }

@@ -17,41 +17,31 @@
             <div class="clearfix"></div>
         </div>
     <div class="scrollable-content map_scrollable" >
-      
        <div class="map-section" style="margin-bottom:50px;">
 				<div class="store_map">
-					
                     <div id="store_list">
                         <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 					</div>
            	</div>
-           
-            <!-- container ends -->
         </div>
-        <!-- section ends -->
-       
-        
     </div>
  <div class=" navbar-app navbar-absolute-bottom">
             <div class="sub-footer-tabs">
                 <ul>
                     <li class="active">
-                        <a href="#">Full Schedule</a>
+                        <a href="">Full Schedule</a>
                     </li>
                     <li>
-                        <a href="#">My Schedule</a>
+                        <a href="">My Schedule</a>
                     </li>
                 </ul>
             </div>
         </div>
-    <!-- wrapper ends -->
 <div class="fliterBar storeMobileSideBar_in" id="mapFilterSidebar">
-
     <div class="filter_menu">
         <p>Filter</p>
         <ul>
             <li ng-click="selectedOpt($index)" ng-repeat="o in mapFilterOpts" ng-class='{active: $index==selectedRow}'>{{o}}</li>
         </ul>
-
     </div>
 </div>

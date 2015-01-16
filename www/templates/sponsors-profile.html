@@ -1,5 +1,4 @@
-
- <div class="schedule-menu text-center">
+<div class="schedule-menu text-center">
             <div class="col-xs-2">
                 <a href="#/home">
                     <span class="glyphicon glyphicon-home"></span>
@@ -18,19 +17,14 @@
             <div class="clearfix"></div>
             <div class="search_result" ng-show="searchbar_sponsers">
                 <form class="search" ng-submit="searchResult(search_sponsers.term)">
-        <span class="glyphicon glyphicon-close" ng-click="searchicon_sponsers = !searchicon_sponsers;search_sponsers.term='';"></span>
-					<input type="search" placeholder="Search in Sponsers" id="sponsers_search" ng-model="search_sponsers.term"/>
-   <!-- <span class="glyphicon glyphicon-search"></span>-->
+                    <div ng-click="searchicon_sponsers = !searchicon_sponsers;search_sponsers.term='';"></div>
+      		<input type="search" placeholder="Search in Sponsers" id="sponsers_search" ng-model="search_sponsers.term" />
                  </form>
 				</div> 
          </div>
   <div class="scrollable-content">
     <div class="main-section">
-        <!--speakers top starts-->
-       
-        <!--speakers top starts-->
         <div class="clearfix"></div>
-        <!--====Content starts====-->
         <div class="menu-items" style="margin-bottom:50px;">
             <div class="speakers-main">
                 <div class="blogShort">
@@ -137,7 +131,6 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <!--====Content Ends====-->
     </div>
       </div>
     </div>

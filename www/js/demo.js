@@ -36,10 +36,12 @@ angular.module('IcnaApp', [
             $rootScope.search.term='';
             $rootScope.search_exhibitors.term='';
             $rootScope.search_sponsers.term='';
+            $rootScope.search_about.term='';             
         });
        $scope.hideOverlay = function () {
             $(".uiblock").hide();
             ToggleHelper.toggle('ScheduleFilterSidebar', 'off');
+            ToggleHelper.toggle('mapFilterSidebar', 'off');
          };
                                  $scope.toggleLeft = function() {
                                         $mdSidenav('left').toggle();
@@ -52,20 +54,19 @@ angular.module('IcnaApp', [
                                  };
                                  
 $scope.showMapFilter = function () {
-                    if($("#filterr").hasClass("filterBlack")){
+                    if($("#filterr").hasClass("filterBlack_one")){
                         $(".uiblock").hide();
-                        $("#filterr").removeClass("filterBlack").addClass('filterr');
+                        $("#filterr").removeClass("filterBlack_one").addClass('filterr');
                         $('.fliterBar').toggleClass('storeMobileSideBar');
                     }else{
                         $(".uiblock").show();
-                        $("#filterr").addClass("filterBlack").removeClass('filterr');
+                        $("#filterr").addClass("filterBlack_one").removeClass('filterr');
                         $('.fliterBar').toggleClass('storeMobileSideBar');
                     }
               
         };
         
         $scope.getNotification= function(i){
-          //  alert("ads asd ");
             var now = new Date().getTime(),
             _60_seconds_from_now = new Date(now + 60*1000);
 
@@ -115,8 +116,6 @@ $scope.showMapFilter = function () {
                                  };
                                  
 $scope.showFilter = function () {
-               // ToggleHelper.toggle('ScheduleFilterSidebar', 'on');
-
         if($("#schedule_filter").hasClass("filterBlack")){
                         $(".uiblock").hide();
                         $("#schedule_filter").removeClass("filterBlack").addClass('schedule_filter');
@@ -134,6 +133,8 @@ $scope.showFilter = function () {
         $scope.searchicon_exhibitors = true;
         $scope.searchbar_sponsers = false;
         $scope.searchicon_sponsers = true;
+        $scope.searchbar_about = false;
+        $scope.searchicon_about = true;
         
          $rootScope.changePage = function (path) {
             $rootScope.slide = 'slide-left';
@@ -174,6 +175,9 @@ $scope.showFilter = function () {
         //$http.get("","");response handler
         };
         $rootScope.search_sponsers = function(term){
+        //$http.get("","");response handler
+        };
+        $rootScope.search_about = function(term){
         //$http.get("","");response handler
         };
         
